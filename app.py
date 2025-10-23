@@ -179,8 +179,8 @@ def build_pdf(
 st.sidebar.header("Worksheet Settings")
 ops = st.sidebar.multiselect(
     "Operations",
-    options=['+', '-', '×'],
-    default=['+', '-', '×']
+    options=["+", "-", "×"],
+    default=["+"]
 )
 
 col_rng1, col_rng2 = st.sidebar.columns(2)
@@ -282,3 +282,4 @@ with st.expander("Tips and ideas"):
 - Change **Min/Max number** to adapt difficulty (e.g., 0–10 for early practice, 0–12 for times tables).
         """
     )
+
